@@ -1,3 +1,5 @@
+input("welcome to dhar man naem generator v1.00, press etner to generate ur first thing lol xd\n")
+
 while True: 
     import random
 
