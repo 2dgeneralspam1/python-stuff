@@ -1,8 +1,34 @@
-input("welcome to dhar man naem generator v1.00, press etner to generate ur first thing lol xd\n")
+# import shit 
+
+import os 
+clearConsole = lambda: os.system('cls' if os.name in ('nt', 'dos') else 'clear')
+import random 
+import pyttsx3
+engine = pyttsx3.init()
+import os 
+
+# thsi part is 100% not skidded xd123213
+
+rate = engine.getProperty('rate')   # getting details of current speaking rate
+engine.setProperty('rate', 200)     # setting up new voice rate
+
+
+import threading
+t = threading.Thread(target=engine.runAndWait)
+t.start()
+
+
+choice = input("if u want tts then type 'yes' if you dont just press enter lol oxddd!@#!@3\n\n")
+if choice.lower() in ["yes", "y"]:
+    dothetango = True 
+else:
+    dothetango = False 
+
+clearConsole()
+
+print(f"Presse enter to generate shit!@#!@# 123 lol!!! tts = {dothetango}\n\n")
 
 while True: 
-    import random
-
     wordsOne = [
         "Kid",
         "Adult",
@@ -111,4 +137,13 @@ while True:
     ]
 
 
-    input(f"{random.choice(wordsOne)} {random.choice(wordsTwo)} {random.choice(wordsThree)}, {random.choice(wordsFour)}!")
+    randomthing = f"{random.choice(wordsOne)} {random.choice(wordsTwo)} {random.choice(wordsThree)}, {random.choice(wordsFour)}!"
+    print(randomthing)
+    if dothetango == True: 
+        engine.say(randomthing)
+        engine.runAndWait()
+    
+   
+   # im dumb 
+    input("")
+
