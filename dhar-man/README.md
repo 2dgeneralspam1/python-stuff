@@ -7,3 +7,4 @@ Please remember to install the *required* TTS package
 ```
 pip install pyttsx3
 ```
+I might clean up the script if I feel like it 
