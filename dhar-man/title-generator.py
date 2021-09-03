@@ -13,26 +13,21 @@ rate = engine.getProperty('rate')   # getting details of current speaking rate
 engine.setProperty('rate', 200)     # setting up new voice rate
 
 
-import threading
-t = threading.Thread(target=engine.runAndWait)
-t.start()
-
 print('''
 
-▓█████▄  ██░ ██  ▄▄▄       ██▀███      ███▄ ▄███▓ ▄▄▄       ███▄    █      ██████ ▓█████ ▓█████   ██████    ▓██   ██▓ ▒█████   █    ██ 
-▒██▀ ██▌▓██░ ██▒▒████▄    ▓██ ▒ ██▒   ▓██▒▀█▀ ██▒▒████▄     ██ ▀█   █    ▒██    ▒ ▓█   ▀ ▓█   ▀ ▒██    ▒     ▒██  ██▒▒██▒  ██▒ ██  ▓██▒
-░██   █▌▒██▀▀██░▒██  ▀█▄  ▓██ ░▄█ ▒   ▓██    ▓██░▒██  ▀█▄  ▓██  ▀█ ██▒   ░ ▓██▄   ▒███   ▒███   ░ ▓██▄        ▒██ ██░▒██░  ██▒▓██  ▒██░
-░▓█▄   ▌░▓█ ░██ ░██▄▄▄▄██ ▒██▀▀█▄     ▒██    ▒██ ░██▄▄▄▄██ ▓██▒  ▐▌██▒     ▒   ██▒▒▓█  ▄ ▒▓█  ▄   ▒   ██▒     ░ ▐██▓░▒██   ██░▓▓█  ░██░
-░▒████▓ ░▓█▒░██▓ ▓█   ▓██▒░██▓ ▒██▒   ▒██▒   ░██▒ ▓█   ▓██▒▒██░   ▓██░   ▒██████▒▒░▒████▒░▒████▒▒██████▒▒     ░ ██▒▓░░ ████▓▒░▒▒█████▓ 
- ▒▒▓  ▒  ▒ ░░▒░▒ ▒▒   ▓▒█░░ ▒▓ ░▒▓░   ░ ▒░   ░  ░ ▒▒   ▓▒█░░ ▒░   ▒ ▒    ▒ ▒▓▒ ▒ ░░░ ▒░ ░░░ ▒░ ░▒ ▒▓▒ ▒ ░      ██▒▒▒ ░ ▒░▒░▒░ ░▒▓▒ ▒ ▒ 
- ░ ▒  ▒  ▒ ░▒░ ░  ▒   ▒▒ ░  ░▒ ░ ▒░   ░  ░      ░  ▒   ▒▒ ░░ ░░   ░ ▒░   ░ ░▒  ░ ░ ░ ░  ░ ░ ░  ░░ ░▒  ░ ░    ▓██ ░▒░   ░ ▒ ▒░ ░░▒░ ░ ░ 
- ░ ░  ░  ░  ░░ ░  ░   ▒     ░░   ░    ░      ░     ░   ▒      ░   ░ ░    ░  ░  ░     ░      ░   ░  ░  ░      ▒ ▒ ░░  ░ ░ ░ ▒   ░░░ ░ ░ 
-   ░     ░  ░  ░      ░  ░   ░               ░         ░  ░         ░          ░     ░  ░   ░  ░      ░      ░ ░         ░ ░     ░     
- ░                                                                                                           ░ ░                       
-
+▓█████▄  ██░ ██  ▄▄▄       ██▀███      ███▄ ▄███▓ ▄▄▄       ███▄    █ 
+▒██▀ ██▌▓██░ ██▒▒████▄    ▓██ ▒ ██▒   ▓██▒▀█▀ ██▒▒████▄     ██ ▀█   █ 
+░██   █▌▒██▀▀██░▒██  ▀█▄  ▓██ ░▄█ ▒   ▓██    ▓██░▒██  ▀█▄  ▓██  ▀█ ██▒
+░▓█▄   ▌░▓█ ░██ ░██▄▄▄▄██ ▒██▀▀█▄     ▒██    ▒██ ░██▄▄▄▄██ ▓██▒  ▐▌██▒
+░▒████▓ ░▓█▒░██▓ ▓█   ▓██▒░██▓ ▒██▒   ▒██▒   ░██▒ ▓█   ▓██▒▒██░   ▓██░
+ ▒▒▓  ▒  ▒ ░░▒░▒ ▒▒   ▓▒█░░ ▒▓ ░▒▓░   ░ ▒░   ░  ░ ▒▒   ▓▒█░░ ▒░   ▒ ▒ 
+ ░ ▒  ▒  ▒ ░▒░ ░  ▒   ▒▒ ░  ░▒ ░ ▒░   ░  ░      ░  ▒   ▒▒ ░░ ░░   ░ ▒░
+ ░ ░  ░  ░  ░░ ░  ░   ▒     ░░   ░    ░      ░     ░   ▒      ░   ░ ░ 
+   ░     ░  ░  ░      ░  ░   ░               ░         ░  ░         ░ 
+ ░                                                                               
 ''')
 
-choice = input("if u want tts then type 'yes' if you dont just press enter lol oxddd!@#!@3\n\n")
+choice = input("Would you like TTS? (Yes or No)\n\n")
 if choice.lower() in ["yes", "y"]:
     dothetango = True 
 else:
@@ -40,7 +35,7 @@ else:
 
 clearConsole()
 
-print(f"Presse enter to generate shit!@#!@# 123 lol!!! tts = {dothetango}\n\n")
+print(f"Press Enter to generate phrases. TTS is set to {dothetango}\n\n")
 
 while True: 
     wordsOne = [
@@ -91,7 +86,9 @@ while True:
         "Eats",
         "Fat shames",
         "Bullies",
-        "Judges"
+        "Judges",
+        "Escapes",
+        "Dodges"
     ]
 
     wordsThree = [
@@ -125,7 +122,8 @@ while True:
         "Female",
         "Joe Biden",
         "Donald Trump",
-        "Taxes"
+        "Taxes",
+        "Shop owner"
     ]
 
     wordsFour = [ 
@@ -147,7 +145,8 @@ while True:
         "Dies",
         "Dies, but then comes back alive then dies again",
         "Gets burned alive",
-        "Dies from a toaster"
+        "Dies from a toaster",
+        "Does not live to regret it"
     ]
 
 
