@@ -5,7 +5,6 @@ clearConsole = lambda: os.system('cls' if os.name in ('nt', 'dos') else 'clear')
 import random 
 import pyttsx3
 engine = pyttsx3.init()
-import os 
 
 # thsi part is 100% not skidded xd123213
 
@@ -37,8 +36,7 @@ clearConsole()
 
 print(f"Press Enter to generate phrases. TTS is set to {dothetango}\n\n")
 
-while True: 
-    wordsOne = [
+wordsOne = [
         "Kid",
         "Adult",
         "Man",
@@ -61,10 +59,36 @@ while True:
         "Joe Biden",
         "Donald Trump",
         "Judge",
-        "Lawyer"
-    ]
+        "Lawyer",
+        "Vice President",
+        "Idiot",
+        "Mentally Challenged Person",
+        "Robot",
+        "Wall-E",
+        "Black person", # I'm not racist, this is just for the generator 
+        "White person",
+        "SsSniper Wolf",
+        "Dhar Mann",
+        "Dhar man",
+        "Flamingo",
+        "DanTDM",
+        "YouTuber",
+        "Skinny ass nigga",
+        "Nigga",
+        "White ass nigga",
+        "PewDiePie",
+        "Famous guy",
+        "Stitch",
+        "Roblox Player",
+        "Slender",
+        "The Imposter",
+        "The Imposter From Among Us",
+        "The Crewmate",
+        "The Crewmate from Among Us",
+        "Bob"
+]
 
-    wordsTwo = [
+wordsTwo = [
         "Kills",
         "Beats",
         "Makes Fun Of",
@@ -88,45 +112,18 @@ while True:
         "Bullies",
         "Judges",
         "Escapes",
-        "Dodges"
-    ]
+        "Dodges",
+        "Drowns",
+        "Dunks",
+        "Shames",
+        "Skinny shames",
+        "Looks at",
+        "Farts on",
+        "Consumes",
+        "Shocks"
+]
 
-    wordsThree = [
-        "Kid",
-        "Adult",
-        "Man",
-        "Bully",
-        "Felon",
-        "Teacher",
-        "Karen",
-        "Woman",
-        "Boy",
-        "Friend",
-        "President",
-        "Car",
-        "House",
-        "Phone",
-        "Purse",
-        "Wallet",
-        "Tank",
-        "Pizza",
-        "Chicken",
-        "Poor person",
-        "Rich person",
-        "Dumb kid",
-        "Kid with ADHD",
-        "Fat kid",
-        "Skinny kid",
-        "Poor kid",
-        "Rich kid",
-        "Female",
-        "Joe Biden",
-        "Donald Trump",
-        "Taxes",
-        "Shop owner"
-    ]
-
-    wordsFour = [ 
+wordsFour = [ 
         "Instantly regrets it",
         "What happens next is shocking",
         "Lives to regret it",
@@ -146,17 +143,19 @@ while True:
         "Dies, but then comes back alive then dies again",
         "Gets burned alive",
         "Dies from a toaster",
-        "Does not live to regret it"
-    ]
+        "Does not live to regret it",
+        "Falls into the river and dies",
+        "Becomes the president",
+        "Turns into a black person"
+]
 
-
-    randomthing = f"{random.choice(wordsOne)} {random.choice(wordsTwo)} {random.choice(wordsThree)}, {random.choice(wordsFour)}!"
+while True: 
+    randomthing = f"{random.choice(wordsOne)} {random.choice(wordsTwo)} {random.choice(wordsOne)}, {random.choice(wordsFour)}!"
     print(randomthing)
     if dothetango == True: 
         engine.say(randomthing)
         engine.runAndWait()
     
-   
    # im dumb 
     input("")
 
