@@ -10,4 +10,7 @@ You can use an outdated version of the program on [Repl](https://replit.com/@gar
 
 # Preview
 
-![image](https://user-images.githubusercontent.com/71535863/131922910-5610bbfa-1c54-46d6-923a-ade8c90e7a6c.png)
+![image](https://user-images.githubusercontent.com/71535863/132067647-b2afa8c5-dcd8-4530-b50d-aca84780cf9c.png)
+
+# Warning
+This script contains potentially racist words (The 'Soft' R) 
