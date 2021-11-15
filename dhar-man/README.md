@@ -17,6 +17,3 @@ Basic version:
 Generator only version: (click to view the video) 
 
 [![click no virus!!!](https://user-images.githubusercontent.com/71535863/132069794-b1a4469d-adec-47d6-9baa-294993ba56ff.png)](https://www.youtube.com/watch?v=KBujSYl1XRA)
-
-# Warning
-The showcases showcase contains potentially racist words (The 'Soft' R). Racist words have been removed from the script. 
