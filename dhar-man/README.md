@@ -12,7 +12,7 @@ You can use an outdated version of the program on [Repl](https://replit.com/@gar
 
 Basic version: 
 
-![image](https://user-images.githubusercontent.com/71535863/132067647-b2afa8c5-dcd8-4530-b50d-aca84780cf9c.png)
+
 
 Generator only version: (click to view the video) 
 
